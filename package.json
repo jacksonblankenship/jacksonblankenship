@@ -1,8 +1,10 @@
 {
   "name": "jacksonblankenship",
   "version": "1.0.0",
-  "desctiption": "My GitHub profile README",
+  "desctiption": "Jackson's GitHub profile README generator",
   "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node build/index.js",
     "prepare": "husky install"
   },
   "keywords": [],
@@ -11,6 +13,14 @@
   "devDependencies": {
     "@commitlint/cli": "^12.0.1",
     "@commitlint/config-conventional": "^12.0.1",
-    "husky": "^5.1.3"
+    "@sindresorhus/tsconfig": "^0.9.0",
+    "@types/node": "^14.14.33",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "husky": "^5.1.3",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.3"
   }
 }
