@@ -1,0 +1,16 @@
+{
+  "name": "jacksonblankenship",
+  "version": "1.0.0",
+  "desctiption": "My GitHub profile README",
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1",
+    "husky": "^5.1.3"
+  }
+}
