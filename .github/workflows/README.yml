@@ -1,4 +1,4 @@
-name: readme generator
+name: Readme Generator
 on:
   push:
   schedule:
@@ -11,18 +11,18 @@ jobs:
         node-version: [15.x]
     steps:
       - uses: actions/checkout@v2
-      - name: use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           node-version: ${{ matrix.node-version }}
-      - name: install dependencies
+      - name: Install dependencies
         run: npm ci
-      - name: generate README
+      - name: Generate README
         run: |-
           npm start --if-present
-      - name: commit and push if changed
+      - name: Commit and push
         run: |-
           git config --global user.email "jacksblan@gmail.com"
           git config --global user.name "Jackson Blankenship"
