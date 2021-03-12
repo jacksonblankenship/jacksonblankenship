@@ -7,6 +7,9 @@
     "start": "npm run build && node build/index.js",
     "prepare": "husky install"
   },
+  "engines": {
+    "node": "v15"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
