@@ -4,7 +4,7 @@ import sections from './sections';
 (() =>
   writeFile(
     'README.md',
-    '<p align="center"><img src="./assets/jackson-logo-name.svg" alt="Jackson Blankenship" width=350 /></p>' +
+    '<p align="center"><img src="./assets/jax.svg" alt="Jackson Blankenship" width=250 /></p>' +
       sections
         .map(
           ({ header, items }) =>
