@@ -1,3 +1,4 @@
+import { format } from 'date-fns';
 import { writeFile } from 'fs';
 import sections from './sections';
 
@@ -30,6 +31,10 @@ import sections from './sections';
               .join('')}</p><br />`,
         )
         .join('')
-        .replace(/\t\n/g, ''),
+        .replace(/\t\n/g, '') +
+      `<br /><p align="center">Last updated ${format(
+        new Date(),
+        'LLLL do, yyyy',
+      )}</p>`,
     err => err && console.error(err),
   ))();
