@@ -10,7 +10,7 @@ interface Section {
 
 const sections: Section[] = [
   {
-    header: 'Where am I?',
+    header: 'head',
     items: [
       {
         title: 'flylance',

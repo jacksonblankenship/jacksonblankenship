@@ -4,20 +4,26 @@ import sections from './sections';
 (() =>
   writeFile(
     'README.md',
-    '<p align="center"><img src="./assets/jackson-logo.svg" alt="Jackson Blankenship" width=115 /></p><h1 align="center">jackson blankenship</h1>' +
+    '<p align="center"><img src="./assets/jackson-logo-name.svg" alt="Jackson Blankenship" width=300 /></p>' +
       sections
         .map(
           ({ header, items }) =>
-            `<h2>${header}</h2><br /><div style="display: flex; flex-wrap: wrap;">${items
+            `${header !== 'head' ? `<h2>${header}</h2>` : ''}<br /><p ${
+              header === 'head'
+                ? 'align="center";'
+                : 'style="display: flex; flex-wrap: wrap;"'
+            }>${items
               .sort(() => 0.5 - Math.random())
-              .map(({ title, href }) => ({
-                img: `<img src="./assets/${title}.svg" alt="${title}" width="50" height="50" />`,
+              .map(({ title, href }, index) => ({
+                img: `<img src="./assets/${title}.svg" alt="${title}" width="50" height="50" />${
+                  index < items.length - 1 ? '&nbsp;&nbsp;&nbsp;&nbsp;' : ''
+                }`,
                 href: href,
               }))
               .map(({ img, href }) =>
                 href ? `<a href="${href}">${img}</a>` : img,
               )
-              .join('')}</div><br />`,
+              .join('')}</p><br />`,
         )
         .join('')
         .replace(/\t\n/g, ''),
