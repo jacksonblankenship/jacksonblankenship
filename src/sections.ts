@@ -158,6 +158,18 @@ const sections: Section[] = [
         title: 'vercel',
         href: 'https://vercel.com/',
       },
+      {
+        title: 'netlify',
+        href: 'https://www.netlify.com/',
+      },
+      {
+        title: 'ant',
+        href: 'https://ant.design/',
+      },
+      {
+        title: 'less',
+        href: 'http://lesscss.org/',
+      },
     ],
   },
   {
@@ -263,18 +275,6 @@ const sections: Section[] = [
       {
         title: 'gatsby',
         href: 'https://www.gatsbyjs.com/',
-      },
-      {
-        title: 'netlify',
-        href: 'https://www.netlify.com/',
-      },
-      {
-        title: 'ant',
-        href: 'https://ant.design/',
-      },
-      {
-        title: 'less',
-        href: 'http://lesscss.org/',
       },
     ],
   },
