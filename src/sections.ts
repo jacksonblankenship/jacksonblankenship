@@ -276,6 +276,10 @@ const sections: Section[] = [
         title: 'gatsby',
         href: 'https://www.gatsbyjs.com/',
       },
+      {
+        title: 'xstate',
+        href: 'https://xstate.js.org/docs/',
+      },
     ],
   },
 ];
