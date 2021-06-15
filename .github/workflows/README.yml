@@ -24,8 +24,8 @@ jobs:
           npm start --if-present
       - name: Commit and push
         run: |-
-          git config --global user.email "jacksblan@gmail.com"
-          git config --global user.name "Jackson Blankenship"
+          git config --global user.email "tars@flylance.com"
+          git config --global user.name "TARS"
           git add -A
           git commit -m "chore(readme): regenerate readme" || exit 0
           git push
