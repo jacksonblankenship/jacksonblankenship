@@ -32,7 +32,7 @@ import sections from './sections';
         .replace(/\t\n/g, '') +
       `<br><p align=center>Last updated ${format(
         new Date(),
-        'LLLL do, yyyy',
-      )}</p>`,
+        'PPP',
+      )} at ${format(new Date(), 'pp')}</p>`,
     err => err && console.error(err),
   ))();
