@@ -26,8 +26,7 @@ const sections: Section[] = [
       },
       {
         title: 'spotify',
-        href:
-          'https://open.spotify.com/user/1240355717?si=Vf0XhUsDRnGYHza5j5STIQ',
+        href: 'https://open.spotify.com/user/1240355717?si=Vf0XhUsDRnGYHza5j5STIQ',
       },
       {
         title: 'soundcloud',
@@ -51,20 +50,12 @@ const sections: Section[] = [
         href: 'https://eslint.org/',
       },
       {
-        title: 'firebase',
-        href: 'https://firebase.google.com/',
-      },
-      {
         title: 'git',
         href: 'https://git-scm.com/',
       },
       {
         title: 'html5',
         href: 'https://en.wikipedia.org/wiki/HTML5',
-      },
-      {
-        title: 'jest',
-        href: 'https://jestjs.io/',
       },
       {
         title: 'lighthouse',
@@ -95,10 +86,6 @@ const sections: Section[] = [
         href: 'https://sass-lang.com/',
       },
       {
-        title: 'styled',
-        href: 'https://styled-components.com/',
-      },
-      {
         title: 'typescript',
         href: 'https://www.typescriptlang.org/',
       },
@@ -115,10 +102,6 @@ const sections: Section[] = [
         href: 'https://webpack.js.org/',
       },
       {
-        title: 'puppeteer',
-        href: 'https://pptr.dev/',
-      },
-      {
         title: 'figma',
         href: 'https://www.figma.com/',
       },
@@ -128,7 +111,7 @@ const sections: Section[] = [
       },
       {
         title: 'sendgrid',
-        href: 'sendgrid.com',
+        href: 'https://sendgrid.com/',
       },
       {
         title: 'bash',
@@ -170,6 +153,14 @@ const sections: Section[] = [
         title: 'less',
         href: 'http://lesscss.org/',
       },
+      {
+        title: 'postgresql',
+        href: 'https://www.postgresql.org/',
+      },
+      {
+        title: 'next-auth',
+        href: 'https://next-auth.js.org/',
+      },
     ],
   },
   {
@@ -178,6 +169,22 @@ const sections: Section[] = [
       {
         title: 'mongo',
         href: 'https://www.mongodb.com/',
+      },
+      {
+        title: 'firebase',
+        href: 'https://firebase.google.com/',
+      },
+      {
+        title: 'jest',
+        href: 'https://jestjs.io/',
+      },
+      {
+        title: 'styled',
+        href: 'https://styled-components.com/',
+      },
+      {
+        title: 'puppeteer',
+        href: 'https://pptr.dev/',
       },
       {
         title: 'serverless',
@@ -263,6 +270,10 @@ const sections: Section[] = [
       {
         title: 'percy',
         href: 'https://percy.io/',
+      },
+      {
+        title: 'prisma',
+        href: 'https://www.prisma.io/',
       },
       {
         title: 'storybook',
