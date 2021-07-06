@@ -22,6 +22,9 @@ jobs:
       - name: Generate README
         run: |-
           npm start --if-present
+      - name: Update minor dependencies
+        run: |-
+          npm update
       - name: Commit and push
         run: |-
           git config --global user.email "tars@flylance.com"
