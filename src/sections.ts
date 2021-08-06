@@ -110,10 +110,6 @@ const sections: Section[] = [
         href: 'https://material-ui.com/',
       },
       {
-        title: 'sendgrid',
-        href: 'https://sendgrid.com/',
-      },
-      {
         title: 'bash',
         href: 'https://en.wikipedia.org/wiki/Bash_(Unix_shell)',
       },
@@ -124,10 +120,6 @@ const sections: Section[] = [
       {
         title: 'javascript',
         href: 'https://www.javascript.com/',
-      },
-      {
-        title: 'analytics',
-        href: 'https://analytics.google.com/',
       },
       {
         title: 'homebrew',
@@ -158,8 +150,36 @@ const sections: Section[] = [
         href: 'https://www.postgresql.org/',
       },
       {
-        title: 'next-auth',
-        href: 'https://next-auth.js.org/',
+        title: 'heroku',
+        href: 'https://www.heroku.com/',
+      },
+      {
+        title: 'auth0',
+        href: 'https://auth0.com/',
+      },
+      {
+        title: 'graphql',
+        href: 'https://graphql.org/',
+      },
+      {
+        title: 'prisma',
+        href: 'https://www.prisma.io/',
+      },
+      {
+        title: 'matomo',
+        href: 'https://matomo.org/',
+      },
+      {
+        title: 'hasura',
+        href: 'https://hasura.io/',
+      },
+      {
+        title: 'renovate',
+        href: 'https://www.whitesourcesoftware.com/free-developer-tools/renovate/',
+      },
+      {
+        title: 'vite',
+        href: 'https://vitejs.dev/',
       },
     ],
   },
@@ -169,6 +189,18 @@ const sections: Section[] = [
       {
         title: 'mongo',
         href: 'https://www.mongodb.com/',
+      },
+      {
+        title: 'next-auth',
+        href: 'https://next-auth.js.org/',
+      },
+      {
+        title: 'analytics',
+        href: 'https://analytics.google.com/',
+      },
+      {
+        title: 'sendgrid',
+        href: 'https://sendgrid.com/',
       },
       {
         title: 'firebase',
@@ -239,10 +271,6 @@ const sections: Section[] = [
         href: 'https://spring.io/',
       },
       {
-        title: 'auth0',
-        href: 'https://auth0.com/',
-      },
-      {
         title: 'bitbucket',
         href: 'https://bitbucket.org/product/',
       },
@@ -255,12 +283,12 @@ const sections: Section[] = [
         href: 'https://about.gitlab.com/',
       },
       {
-        title: 'heroku',
-        href: 'https://www.heroku.com/',
-      },
-      {
         title: 'invision',
         href: 'https://www.invisionapp.com/',
+      },
+      {
+        title: 'xstate',
+        href: 'https://xstate.js.org/docs/',
       },
     ],
   },
@@ -272,24 +300,8 @@ const sections: Section[] = [
         href: 'https://percy.io/',
       },
       {
-        title: 'prisma',
-        href: 'https://www.prisma.io/',
-      },
-      {
         title: 'storybook',
         href: 'https://storybook.js.org/',
-      },
-      {
-        title: 'graphql',
-        href: 'https://graphql.org/',
-      },
-      {
-        title: 'gatsby',
-        href: 'https://www.gatsbyjs.com/',
-      },
-      {
-        title: 'xstate',
-        href: 'https://xstate.js.org/docs/',
       },
     ],
   },
