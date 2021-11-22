@@ -306,6 +306,10 @@ const sections: Section[] = [
         title: 'vite',
         href: 'https://vitejs.dev/',
       },
+      {
+        title: 'nhost',
+        href: 'https://nhost.io/',
+      },
     ],
   },
   {
