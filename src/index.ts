@@ -22,6 +22,10 @@ import sections from './sections';
               .map(({ img, href }) =>
                 href ? `<a href="${href}">${img}</a>` : img,
               )
+              .map(
+                (img, index) =>
+                  `${img}${index < items.length - 1 ? '&nbsp;'.repeat(4) : ''}`,
+              )
               .join('')}</p><br>`,
         )
         .join('')
