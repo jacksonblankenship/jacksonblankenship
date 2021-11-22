@@ -169,6 +169,10 @@ const sections: Section[] = [
         title: 'actions',
         href: 'https://github.com/features/actions',
       },
+      {
+        title: 'react-hook-form',
+        href: 'https://react-hook-form.com/',
+      },
     ],
   },
   {
