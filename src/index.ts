@@ -30,6 +30,9 @@ import sections from './sections';
         )
         .join('')
         .replace(/\t\n/g, '') +
-      `<br><p align=center>Last updated ${format(new Date(), 'PPPppp')}</p>`,
+      `<br><p align=center><i>Last updated ${format(
+        new Date(),
+        'PPPppp',
+      )}</i></p>`,
     err => err && console.error(err),
   ))();
