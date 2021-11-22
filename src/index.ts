@@ -20,7 +20,9 @@ import sections from './sections';
                 href: href,
               }))
               .map(({ img, href }) =>
-                href ? `<a href="${href}">${img}</a>` : img,
+                href
+                  ? `<a href="${href}" target="_blank" rel="noopener noreferrer">${img}</a>`
+                  : img,
               )
               .map(
                 (img, index) =>

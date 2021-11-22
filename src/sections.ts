@@ -146,40 +146,28 @@ const sections: Section[] = [
         href: 'http://lesscss.org/',
       },
       {
-        title: 'postgresql',
-        href: 'https://www.postgresql.org/',
-      },
-      {
-        title: 'heroku',
-        href: 'https://www.heroku.com/',
-      },
-      {
-        title: 'auth0',
-        href: 'https://auth0.com/',
-      },
-      {
-        title: 'graphql',
-        href: 'https://graphql.org/',
-      },
-      {
-        title: 'prisma',
-        href: 'https://www.prisma.io/',
-      },
-      {
         title: 'matomo',
         href: 'https://matomo.org/',
-      },
-      {
-        title: 'hasura',
-        href: 'https://hasura.io/',
       },
       {
         title: 'renovate',
         href: 'https://www.whitesourcesoftware.com/free-developer-tools/renovate/',
       },
       {
-        title: 'vite',
-        href: 'https://vitejs.dev/',
+        title: 'storybook',
+        href: 'https://storybook.js.org/',
+      },
+      {
+        title: 'commitlint',
+        href: 'https://commitlint.js.org/',
+      },
+      {
+        title: 'husky',
+        href: 'https://typicode.github.io/husky/',
+      },
+      {
+        title: 'actions',
+        href: 'https://github.com/features/actions',
       },
     ],
   },
@@ -290,6 +278,34 @@ const sections: Section[] = [
         title: 'xstate',
         href: 'https://xstate.js.org/docs/',
       },
+      {
+        title: 'postgresql',
+        href: 'https://www.postgresql.org/',
+      },
+      {
+        title: 'heroku',
+        href: 'https://www.heroku.com/',
+      },
+      {
+        title: 'auth0',
+        href: 'https://auth0.com/',
+      },
+      {
+        title: 'graphql',
+        href: 'https://graphql.org/',
+      },
+      {
+        title: 'prisma',
+        href: 'https://www.prisma.io/',
+      },
+      {
+        title: 'hasura',
+        href: 'https://hasura.io/',
+      },
+      {
+        title: 'vite',
+        href: 'https://vitejs.dev/',
+      },
     ],
   },
   {
@@ -300,8 +316,8 @@ const sections: Section[] = [
         href: 'https://percy.io/',
       },
       {
-        title: 'storybook',
-        href: 'https://storybook.js.org/',
+        title: 'chromatic',
+        href: 'https://www.chromatic.com/',
       },
     ],
   },
