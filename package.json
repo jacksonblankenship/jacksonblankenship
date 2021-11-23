@@ -8,7 +8,7 @@
     "prepare": "husky install"
   },
   "engines": {
-    "node": "v15"
+    "node": "16"
   },
   "keywords": [],
   "author": "",
@@ -26,7 +26,7 @@
     "typescript": "4.4.2"
   },
   "dependencies": {
-    "@types/node": "15.14.7",
+    "@types/node": "16.11.10",
     "date-fns": "2.23.0"
   }
 }
