@@ -5,7 +5,7 @@ import sections from './sections';
 (() =>
   writeFile(
     'README.md',
-    '<p align=center><img src="./assets/jax.svg" alt="Jackson Blankenship" width=300 /></p>' +
+    '![build](https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/build.yml/badge.svg)<br/><p align=center><img src="./assets/_.svg" alt="Jackson Blankenship" width=300 /></p>' +
       sections
         .map(
           ({ header, items }) =>
@@ -20,7 +20,9 @@ import sections from './sections';
                 href: href,
               }))
               .map(({ img, href }) =>
-                href ? `<a href="${href}">${img}</a>` : img,
+                href
+                  ? `<a href="${href}" target="_blank" rel="noopener noreferrer">${img}</a>`
+                  : img,
               )
               .map(
                 (img, index) =>
@@ -28,8 +30,17 @@ import sections from './sections';
               )
               .join('')}</p><br>`,
         )
+        .map((section, index) =>
+          index === 0
+            ? section +
+              `<p align=center>Hello, world! Welcome to my GitHub profile. I'm Jackson, and I'm a full-stack web developer. I figured it would be fun to track the tech I've worked with over the years in one place, so I overengineered this readme to do exactly that. If you're looking for help on your project and my tech lines up with yours, <a href="mailto:jacksblan@gmail.com">shoot me an email</a>. 🚀</p><p align=center>Cheers 👋</p>`
+            : section,
+        )
         .join('')
         .replace(/\t\n/g, '') +
-      `<br><p align=center>Last updated ${format(new Date(), 'PPPppp')}</p>`,
+      `<br><p align=center><i>Last updated ${format(
+        new Date(),
+        'PPPppp',
+      )}</i></p>`,
     err => err && console.error(err),
   ))();
