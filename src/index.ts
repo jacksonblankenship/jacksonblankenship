@@ -5,7 +5,7 @@ import sections from './sections';
 (() =>
   writeFile(
     'README.md',
-    '![Build](https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/README.yml/badge.svg)<br/><p align=center><img src="./assets/_.svg" alt="Jackson Blankenship" width=300 /></p>' +
+    '![build](https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/build.yml/badge.svg)<br/><p align=center><img src="./assets/_.svg" alt="Jackson Blankenship" width=300 /></p>' +
       sections
         .map(
           ({ header, items }) =>
