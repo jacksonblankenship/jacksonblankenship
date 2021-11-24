@@ -30,6 +30,12 @@ import sections from './sections';
               )
               .join('')}</p><br>`,
         )
+        .map((section, index) =>
+          index === 0
+            ? section +
+              `<p align=center>Hello, world! Welcome to my GitHub profile. I'm Jackson, and I'm a full-stack web developer. I figured it would be fun to track the tech I've worked with over the years in one place, so I overengineered this readme to do exactly that. If you're looking for help on your project and my tech lines up with yours, <a href="mailto:jacksblan@gmail.com">shoot me an email</a>. 🚀</p><p align=center>Cheers 👋</p>`
+            : section,
+        )
         .join('')
         .replace(/\t\n/g, '') +
       `<br><p align=center><i>Last updated ${format(
