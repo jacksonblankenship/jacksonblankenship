@@ -5,10 +5,10 @@ interface Item {
 
 interface Section {
   header: string;
-  items: Item[];
+  items: Array<Item>;
 }
 
-const sections: Section[] = [
+const sections: Array<Section> = [
   {
     header: 'head',
     items: [
