@@ -1,32 +1,31 @@
 {
   "name": "jacksonblankenship",
-  "version": "1.0.0",
-  "desctiption": "Jackson's GitHub profile README generator",
+  "desctiption": "Jackson's GitHub Profile",
   "scripts": {
     "build": "tsc",
     "start": "npm run build && node build/index.js",
     "prepare": "husky install"
   },
   "engines": {
-    "node": "v15"
+    "node": "v16"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@commitlint/cli": "13.1.0",
-    "@commitlint/config-conventional": "13.1.0",
-    "@sindresorhus/tsconfig": "2.0.0",
-    "@typescript-eslint/eslint-plugin": "4.31.0",
-    "@typescript-eslint/parser": "4.31.0",
-    "eslint": "7.32.0",
-    "eslint-config-prettier": "8.3.0",
-    "husky": "7.0.2",
-    "prettier": "2.4.0",
-    "typescript": "4.4.2"
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "@sindresorhus/tsconfig": "^2.0.0",
+    "@types/node": "^16.11.10",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.2",
+    "prettier": "^2.4.0",
+    "typescript": "^4.4.2"
   },
   "dependencies": {
-    "@types/node": "15.14.7",
-    "date-fns": "2.23.0"
+    "date-fns": "^2.23.0"
   }
 }
