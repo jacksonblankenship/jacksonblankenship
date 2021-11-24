@@ -10,9 +10,7 @@ import sections from './sections';
         .map(
           ({ header, items }) =>
             `${header !== 'head' ? `<h3>${header}</h3>` : ''}<br><p ${
-              header === 'head'
-                ? 'align=center'
-                : 'style="display: flex; flex-wrap: wrap;"'
+              header === 'head' ? 'align=center' : ''
             }>${items
               .sort(() => 0.5 - Math.random())
               .map(({ title, href }) => ({
@@ -20,9 +18,7 @@ import sections from './sections';
                 href: href,
               }))
               .map(({ img, href }) =>
-                href
-                  ? `<a href="${href}" target="_blank" rel="noopener noreferrer">${img}</a>`
-                  : img,
+                href ? `<a href="${href}">${img}</a>` : img,
               )
               .map(
                 (img, index) =>
