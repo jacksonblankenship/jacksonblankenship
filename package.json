@@ -13,10 +13,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@commitlint/cli": "^15.0.0",
-    "@commitlint/config-conventional": "^15.0.0",
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
     "@sindresorhus/tsconfig": "^2.0.0",
     "@types/node": "^16.11.10",
+    "cz-conventional-changelog": "^3.3.0",
     "husky": "^7.0.2",
     "prettier": "^2.4.0",
     "prettier-plugin-organize-imports": "^2.3.4",
@@ -24,5 +25,10 @@
   },
   "dependencies": {
     "date-fns": "^2.23.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
