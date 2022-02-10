@@ -165,6 +165,22 @@ const sections: Array<Section> = [
         title: 'aws',
         href: 'https://aws.amazon.com/',
       },
+      {
+        title: 'twilio',
+        href: 'https://www.twilio.com/',
+      },
+      {
+        title: 'slack-bolt',
+        href: 'https://slack.dev/bolt-js',
+      },
+      {
+        title: 'ngrok',
+        href: 'https://ngrok.com/',
+      },
+      {
+        title: 'plaid',
+        href: 'https://plaid.com/',
+      },
     ],
   },
   {
