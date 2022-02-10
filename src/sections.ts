@@ -106,10 +106,6 @@ const sections: Array<Section> = [
         href: 'https://www.figma.com/',
       },
       {
-        title: 'material-ui',
-        href: 'https://material-ui.com/',
-      },
-      {
         title: 'bash',
         href: 'https://en.wikipedia.org/wiki/Bash_(Unix_shell)',
       },
@@ -134,6 +130,51 @@ const sections: Array<Section> = [
         href: 'https://vercel.com/',
       },
       {
+        title: 'renovate',
+        href: 'https://www.whitesourcesoftware.com/free-developer-tools/renovate/',
+      },
+      {
+        title: 'commitlint',
+        href: 'https://commitlint.js.org/',
+      },
+      {
+        title: 'husky',
+        href: 'https://typicode.github.io/husky/',
+      },
+      {
+        title: 'actions',
+        href: 'https://github.com/features/actions',
+      },
+      {
+        title: 'create-react-app',
+        href: 'https://create-react-app.dev/',
+      },
+      {
+        title: 'ag-grid',
+        href: 'https://www.ag-grid.com/',
+      },
+      {
+        title: 'recoil',
+        href: 'https://recoiljs.org/',
+      },
+      {
+        title: 'serverless',
+        href: 'https://www.serverless.com/',
+      },
+      {
+        title: 'aws',
+        href: 'https://aws.amazon.com/',
+      },
+    ],
+  },
+  {
+    header: 'Previously worked with...',
+    items: [
+      {
+        title: 'material-ui',
+        href: 'https://material-ui.com/',
+      },
+      {
         title: 'netlify',
         href: 'https://www.netlify.com/',
       },
@@ -150,34 +191,13 @@ const sections: Array<Section> = [
         href: 'https://matomo.org/',
       },
       {
-        title: 'renovate',
-        href: 'https://www.whitesourcesoftware.com/free-developer-tools/renovate/',
-      },
-      {
         title: 'storybook',
         href: 'https://storybook.js.org/',
-      },
-      {
-        title: 'commitlint',
-        href: 'https://commitlint.js.org/',
-      },
-      {
-        title: 'husky',
-        href: 'https://typicode.github.io/husky/',
-      },
-      {
-        title: 'actions',
-        href: 'https://github.com/features/actions',
       },
       {
         title: 'react-hook-form',
         href: 'https://react-hook-form.com/',
       },
-    ],
-  },
-  {
-    header: 'Previously worked with...',
-    items: [
       {
         title: 'mongo',
         href: 'https://www.mongodb.com/',
@@ -211,10 +231,6 @@ const sections: Array<Section> = [
         href: 'https://pptr.dev/',
       },
       {
-        title: 'serverless',
-        href: 'https://www.serverless.com/',
-      },
-      {
         title: 'sketch',
         href: 'https://www.sketch.com/',
       },
@@ -229,10 +245,6 @@ const sections: Array<Section> = [
       {
         title: 'redux',
         href: 'https://redux.js.org/',
-      },
-      {
-        title: 'aws',
-        href: 'https://aws.amazon.com/',
       },
       {
         title: 'python',
