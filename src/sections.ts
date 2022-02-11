@@ -348,12 +348,8 @@ const sections: Array<Section> = [
     header: 'Currently learning...',
     items: [
       {
-        title: 'percy',
-        href: 'https://percy.io/',
-      },
-      {
-        title: 'chromatic',
-        href: 'https://www.chromatic.com/',
+        title: 'remix',
+        href: 'https://remix.run/',
       },
     ],
   },
