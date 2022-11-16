@@ -9,7 +9,7 @@ on:
     - cron: '0 */12 * * *'
 
 jobs:
-  jest:
+  build:
     runs-on: ubuntu-latest
 
     steps:
