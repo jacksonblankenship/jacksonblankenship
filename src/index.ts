@@ -1,7 +1,6 @@
 import { writeFile } from 'fs';
 
 import { format } from 'date-fns';
-import { zonedTimeToUtc } from 'date-fns-tz';
 
 import sections from './sections';
 
@@ -38,7 +37,7 @@ import sections from './sections';
         .join('')
         .replace(/\t\n/g, '') +
       `<br><p align=center><i>Last updated ${format(
-        zonedTimeToUtc(new Date(), 'America/Chicago'),
+        new Date(),
         'PPPppp',
       )}</i></p>`,
     err => err && console.error(err),
