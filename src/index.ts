@@ -1,5 +1,7 @@
-import { format } from 'date-fns';
 import { writeFile } from 'fs';
+
+import { format } from 'date-fns';
+
 import sections from './sections';
 
 (() =>

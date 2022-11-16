@@ -1,10 +1,16 @@
 {
-  "extends": "@sindresorhus/tsconfig",
+  "extends": "ts-node/node16/tsconfig.json",
   "compilerOptions": {
-    "esModuleInterop": true,
-    "outDir": "build",
-    "sourceMap": true,
-    "module": "CommonJS"
+    "allowJs": false,
+    "removeComments": true,
+    "outDir": "dist"
+    // uncomment for dom support (e.g. puppeteer scripts)
+    // "lib": ["DOM"]
   },
-  "include": ["src"]
+  "ts-node": {
+    "swc": true,
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
 }

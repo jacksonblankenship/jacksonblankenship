@@ -1,34 +1,37 @@
 {
   "name": "jacksonblankenship",
-  "desctiption": "Jackson's GitHub Profile",
-  "scripts": {
-    "build": "tsc",
-    "start": "npm run build && node build/index.js",
-    "prepare": "husky install"
-  },
+  "desctiption": "Jackson Blankenship's GitHub Profile",
   "engines": {
-    "node": "v16"
+    "node": "16.18.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@commitlint/cli": "^16.1.0",
-    "@commitlint/config-conventional": "^16.0.0",
-    "@sindresorhus/tsconfig": "^2.0.0",
-    "@types/node": "^16.11.10",
-    "cz-conventional-changelog": "^3.3.0",
-    "husky": "^7.0.2",
-    "prettier": "^2.4.0",
-    "prettier-plugin-organize-imports": "^2.3.4",
-    "typescript": "^4.4.2"
+  "scripts": {
+    "dev": "ts-node ./src/index.ts",
+    "build": "tsc",
+    "start": "node ./dist/index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "preinstall": "npx only-allow yarn",
+    "prepare": "husky install"
   },
   "dependencies": {
     "date-fns": "^2.23.0"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
+  "devDependencies": {
+    "@swc/core": "^1.3.18",
+    "@swc/helpers": "^0.4.13",
+    "@types/node": "16.18.0",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "prettier-plugin-organize-imports": "^3.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "4.8.4"
   }
 }
