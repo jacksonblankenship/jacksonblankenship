@@ -22,7 +22,7 @@ const sections: Array<Section> = [
       },
       {
         title: 'twitter',
-        href: 'https://twitter.com/env_jackson',
+        href: 'https://twitter.com/jaxdotjs',
       },
       {
         title: 'spotify',
