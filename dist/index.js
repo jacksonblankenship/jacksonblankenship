@@ -5,7 +5,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const fs_1 = require("fs");
 const date_fns_1 = require("date-fns");
-const date_fns_tz_1 = require("date-fns-tz");
 const sections_1 = __importDefault(require("./sections"));
 (() => (0, fs_1.writeFile)('README.md', '![build](https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/build.yml/badge.svg)<br/><p align=center><img src="./assets/_.svg" alt="Jackson Blankenship" width=300 /></p>' +
     sections_1.default
@@ -24,4 +23,4 @@ const sections_1 = __importDefault(require("./sections"));
         : section)
         .join('')
         .replace(/\t\n/g, '') +
-    `<br><p align=center><i>Last updated ${(0, date_fns_1.format)((0, date_fns_tz_1.zonedTimeToUtc)(new Date(), 'America/Chicago'), 'PPPppp')}</i></p>`, err => err && console.error(err)))();
+    `<br><p align=center><i>Last updated ${(0, date_fns_1.format)(new Date(), 'PPPppp')}</i></p>`, err => err && console.error(err)))();
