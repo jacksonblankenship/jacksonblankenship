@@ -38,14 +38,6 @@ const sections: Array<Section> = [
     header: 'Currently working with...',
     items: [
       {
-        title: 'babel',
-        href: 'https://babeljs.io/',
-      },
-      {
-        title: 'css3',
-        href: 'https://en.wikipedia.org/wiki/CSS',
-      },
-      {
         title: 'eslint',
         href: 'https://eslint.org/',
       },
@@ -54,24 +46,12 @@ const sections: Array<Section> = [
         href: 'https://git-scm.com/',
       },
       {
-        title: 'html5',
-        href: 'https://en.wikipedia.org/wiki/HTML5',
-      },
-      {
         title: 'lighthouse',
         href: 'https://web.dev/',
       },
       {
-        title: 'next',
-        href: 'https://nextjs.org/',
-      },
-      {
         title: 'node',
         href: 'https://nodejs.org/en/',
-      },
-      {
-        title: 'npm',
-        href: 'https://www.npmjs.com/',
       },
       {
         title: 'prettier',
@@ -98,16 +78,8 @@ const sections: Array<Section> = [
         href: 'https://code.visualstudio.com/',
       },
       {
-        title: 'webpack',
-        href: 'https://webpack.js.org/',
-      },
-      {
         title: 'figma',
         href: 'https://www.figma.com/',
-      },
-      {
-        title: 'bash',
-        href: 'https://en.wikipedia.org/wiki/Bash_(Unix_shell)',
       },
       {
         title: 'github',
@@ -122,20 +94,8 @@ const sections: Array<Section> = [
         href: 'https://brew.sh/',
       },
       {
-        title: 'postman',
-        href: 'https://www.postman.com/',
-      },
-      {
-        title: 'vercel',
-        href: 'https://vercel.com/',
-      },
-      {
         title: 'renovate',
         href: 'https://www.whitesourcesoftware.com/free-developer-tools/renovate/',
-      },
-      {
-        title: 'commitlint',
-        href: 'https://commitlint.js.org/',
       },
       {
         title: 'husky',
@@ -146,16 +106,109 @@ const sections: Array<Section> = [
         href: 'https://github.com/features/actions',
       },
       {
+        title: 'recoil',
+        href: 'https://recoiljs.org/',
+      },
+      {
+        title: 'vite',
+        href: 'https://vitejs.dev/',
+      },
+      {
+        title: 'grpc',
+        href: 'https://grpc.io/'
+      },
+      {
+        title: 'stylelint',
+        href: 'https://stylelint.io/'
+      },
+      {
+        title: 'jest',
+        href: 'https://jestjs.io/',
+      },
+      {
+        title: 'react-testing-library',
+        href: 'https://testing-library.com/'
+      },
+      {
+        title: 'react-router-dom',
+        href: 'https://v5.reactrouter.com/'
+      },
+      {
+        title: 'fish',
+        href: 'https://fishshell.com/'
+      },
+      {
+        title: 'docker',
+        href: 'https://www.docker.com/'
+      },
+      {
+        title: 'nginx',
+        href: 'https://www.nginx.com/'
+      },
+      {
+        title: 'yarn',
+        href: 'https://yarnpkg.com/'
+      },
+    ],
+  },
+  {
+    header: 'Previously worked with...',
+    items: [
+      {
+        title: 'css3',
+        href: 'https://en.wikipedia.org/wiki/CSS',
+      },
+      {
+        title: 'html5',
+        href: 'https://en.wikipedia.org/wiki/HTML5',
+      },
+      {
+        title: 'npm',
+        href: 'https://www.npmjs.com/',
+      },
+      {
+        title: 'pnpm',
+        href: 'https://pnpm.io/'
+      },
+      {
+        title: 'trpc',
+        href: 'https://trpc.io/'
+      },
+      {
+        title: 'next',
+        href: 'https://nextjs.org/',
+      },
+      {
+        title: 'vercel',
+        href: 'https://vercel.com/',
+      },
+      {
+        title: 'babel',
+        href: 'https://babeljs.io/',
+      },
+      {
+        title: 'webpack',
+        href: 'https://webpack.js.org/',
+      },
+      {
+        title: 'bash',
+        href: 'https://en.wikipedia.org/wiki/Bash_(Unix_shell)',
+      },
+      {
+        title: 'postman',
+        href: 'https://www.postman.com/',
+      },
+      {
+        title: 'commitlint',
+        href: 'https://commitlint.js.org/',
+      },
+      {
         title: 'create-react-app',
         href: 'https://create-react-app.dev/',
       },
       {
         title: 'ag-grid',
         href: 'https://www.ag-grid.com/',
-      },
-      {
-        title: 'recoil',
-        href: 'https://recoiljs.org/',
       },
       {
         title: 'serverless',
@@ -174,18 +227,13 @@ const sections: Array<Section> = [
         href: 'https://slack.dev/bolt-js',
       },
       {
-        title: 'ngrok',
-        href: 'https://ngrok.com/',
-      },
-      {
         title: 'plaid',
         href: 'https://plaid.com/',
       },
-    ],
-  },
-  {
-    header: 'Previously worked with...',
-    items: [
+      {
+        title: 'ngrok',
+        href: 'https://ngrok.com/',
+      },
       {
         title: 'material-ui',
         href: 'https://material-ui.com/',
@@ -233,10 +281,6 @@ const sections: Array<Section> = [
       {
         title: 'firebase',
         href: 'https://firebase.google.com/',
-      },
-      {
-        title: 'jest',
-        href: 'https://jestjs.io/',
       },
       {
         title: 'styled',
@@ -333,10 +377,6 @@ const sections: Array<Section> = [
       {
         title: 'hasura',
         href: 'https://hasura.io/',
-      },
-      {
-        title: 'vite',
-        href: 'https://vitejs.dev/',
       },
       {
         title: 'nhost',
