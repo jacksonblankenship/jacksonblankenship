@@ -149,6 +149,10 @@ const sections: Array<Section> = [
         title: 'yarn',
         href: 'https://yarnpkg.com/'
       },
+      {
+        title: 'railway',
+        href: 'https://railway.app/'
+      }
     ],
   },
   {
@@ -388,9 +392,9 @@ const sections: Array<Section> = [
     header: 'Currently learning...',
     items: [
       {
-        title: 'remix',
-        href: 'https://remix.run/',
-      },
+        title: 'rabbitmq',
+        href: 'https://www.rabbitmq.com/'
+      }
     ],
   },
 ];
