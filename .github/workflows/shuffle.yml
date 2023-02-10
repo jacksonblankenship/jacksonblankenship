@@ -1,4 +1,4 @@
-name: build
+name: shuffle
 
 env:
   CI: true
@@ -9,7 +9,7 @@ on:
     - cron: '0 */12 * * *'
 
 jobs:
-  build:
+  shuffle:
     runs-on: ubuntu-latest
 
     steps:
