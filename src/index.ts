@@ -5,16 +5,17 @@ import { format } from 'date-fns';
 import sections from './sections';
 
 const logo = `
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jacksonblankenship/jacksonblankenship/main/assets/_light.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jacksonblankenship/jacksonblankenship/main/assets/_dark.png">
-  <img src="https://raw.githubusercontent.com/jacksonblankenship/jacksonblankenship/main/assets/_dark.png">
-</picture>`;
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/_light.png">
+    <img alt="logo" src="./assets/_dark.png">
+  </picture>
+</p>`;
 
 (() =>
   writeFile(
     'README.md',
-    `![build](https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/build.yml/badge.svg)<br/><p align=center>${logo}</p>` +
+    `![build](https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/build.yml/badge.svg)<br/>${logo}` +
       sections
         .map(
           ({ header, items }) =>
