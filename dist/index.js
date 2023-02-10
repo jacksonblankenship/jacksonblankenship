@@ -8,9 +8,9 @@ const date_fns_1 = require("date-fns");
 const sections_1 = __importDefault(require("./sections"));
 const logo = `
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/_light.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/_dark.svg">
-  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="./assets/_dark.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/_light.png">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/_dark.png">
+  <img src="./assets/_dark.png">
 </picture>`;
 (() => (0, fs_1.writeFile)('README.md', `![build](https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/build.yml/badge.svg)<br/><p align=center>${logo}</p>` +
     sections_1.default
