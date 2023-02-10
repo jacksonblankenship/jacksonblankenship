@@ -36,7 +36,7 @@ import sections from './sections';
         )
         .join('')
         .replace(/\t\n/g, '') +
-      `<img src="https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/build.yml/badge.svg" /><p align=center><i>Last updated ${format(
+      `<p align=center><img src="https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/build.yml/badge.svg" /></p><p align=center><i>Last updated ${format(
         new Date(),
         'PPPppp',
       )}</i></p>`,
