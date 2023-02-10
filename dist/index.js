@@ -19,7 +19,7 @@ const sections_1 = __importDefault(require("./sections"));
         .join('')}</p><br>`)
         .map((section, index) => index === 0
         ? section +
-            `<p align=center>Hello, world! Welcome to my GitHub profile. I'm Jackson, and I'm a full-stack web developer. I thought it would be fun to track the tech I've worked with over the years in one place, so I over-engineered this readme to do exactly that. I don't update it as often as I'd like, but GitHub Actions does its best to keep it fresh by shuffling the icons every few hours 🤖 Anyway, if you're looking for help on your project and my tech lines up with yours, <a href="mailto:jacksblan@gmail.com">shoot me an email</a>. 🚀</p><p align=center>Cheers 👋</p>`
+            `<p align=center>Hello, world! Welcome to my GitHub profile. I'm Jackson, and I'm a full-stack web developer. I thought it would be fun to track the tech I've worked with over the years in one place, so I over-engineered this readme to do exactly that. I don't update it as often as I'd like, but GitHub Actions does its best to keep it fresh by <a href="https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/build.yml">shuffling the icons</a> every few hours 🤖 Anyway, if you're looking for help on your project and my tech lines up with yours, <a href="mailto:jacksblan@gmail.com">shoot me an email</a>. 🚀</p><p align=center>Cheers 👋</p>`
         : section)
         .join('')
         .replace(/\t\n/g, '') +
