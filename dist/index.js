@@ -6,7 +6,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const fs_1 = require("fs");
 const date_fns_1 = require("date-fns");
 const sections_1 = __importDefault(require("./sections"));
-(() => (0, fs_1.writeFile)('README.md', '![build](https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/build.yml/badge.svg)<br/><p align=center><img src="./assets/_.svg" alt="Jackson Blankenship" width=300 /></p>' +
+const logo = `
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/_light.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/_dark.svg">
+  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="./assets/_dark.svg">
+</picture>`;
+(() => (0, fs_1.writeFile)('README.md', `![build](https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/build.yml/badge.svg)<br/><p align=center>${logo}</p>` +
     sections_1.default
         .map(({ header, items }) => `${header !== 'head' ? `<h3>${header}</h3>` : ''}<br><p ${header === 'head' ? 'align=center' : ''}>${items
         .sort(() => 0.5 - Math.random())
