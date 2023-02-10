@@ -4,18 +4,10 @@ import { format } from 'date-fns';
 
 import sections from './sections';
 
-const logo = `
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/_light.png">
-    <img alt="logo" src="./assets/_dark.png">
-  </picture>
-</p>`;
-
 (() =>
   writeFile(
     'README.md',
-    `![build](https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/build.yml/badge.svg)<br/>${logo}` +
+    '![build](https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/build.yml/badge.svg)<br/><p align=center><img src="./assets/_dark.svg#gh-light-mode-only" alt="Jackson Blankenship" width=295 /><img src="./assets/_light.svg#gh-dark-mode-only" alt="Jackson Blankenship" width=295 /></p>' +
       sections
         .map(
           ({ header, items }) =>
