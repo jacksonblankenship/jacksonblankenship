@@ -23,4 +23,4 @@ const sections_1 = __importDefault(require("./sections"));
         : section)
         .join('')
         .replace(/\t\n/g, '') +
-    `<img src="https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/build.yml/badge.svg" /><p align=center><i>Last updated ${(0, date_fns_1.format)(new Date(), 'PPPppp')}</i></p>`, err => err && console.error(err)))();
+    `<p align=center><img src="https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/build.yml/badge.svg" /></p><p align=center><i>Last updated ${(0, date_fns_1.format)(new Date(), 'PPPppp')}</i></p>`, err => err && console.error(err)))();
