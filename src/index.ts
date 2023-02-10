@@ -7,7 +7,7 @@ import sections from './sections';
 (() =>
   writeFile(
     'README.md',
-    '![build](https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/build.yml/badge.svg)<br/><p align=center><img src="./assets/_dark.png#gh-light-mode-only" alt="Jackson Blankenship" width=295 /><img src="./assets/_light.png#gh-dark-mode-only" alt="Jackson Blankenship" width=295 /></p>' +
+    '<p align=center><img src="./assets/_dark.png#gh-light-mode-only" alt="Jackson Blankenship" width=295 /><img src="./assets/_light.png#gh-dark-mode-only" alt="Jackson Blankenship" width=295 /></p>' +
       sections
         .map(
           ({ header, items }) =>
@@ -36,7 +36,7 @@ import sections from './sections';
         )
         .join('')
         .replace(/\t\n/g, '') +
-      `<br><p align=center><i>Last updated ${format(
+      `<img src="https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/build.yml/badge.svg" /><p align=center><i>Last updated ${format(
         new Date(),
         'PPPppp',
       )}</i></p>`,
