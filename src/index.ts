@@ -7,7 +7,7 @@ import sections from './sections';
 (() =>
   writeFile(
     'README.md',
-    '![build](https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/build.yml/badge.svg)<br/><p align=center><img src="./assets/_dark.svg#gh-light-mode-only" alt="Jackson Blankenship" width=295 /><img src="./assets/_light.svg#gh-dark-mode-only" alt="Jackson Blankenship" width=295 /></p>' +
+    '![build](https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/build.yml/badge.svg)<br/><p align=center><img src="./assets/_dark.png#gh-light-mode-only" alt="Jackson Blankenship" width=295 /><img src="./assets/_light.png#gh-dark-mode-only" alt="Jackson Blankenship" width=295 /></p>' +
       sections
         .map(
           ({ header, items }) =>
