@@ -7,12 +7,13 @@ const fs_1 = require("fs");
 const date_fns_1 = require("date-fns");
 const sections_1 = __importDefault(require("./sections"));
 const logo = `
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jacksonblankenship/jacksonblankenship/main/assets/_light.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jacksonblankenship/jacksonblankenship/main/assets/_dark.png">
-  <img src="https://raw.githubusercontent.com/jacksonblankenship/jacksonblankenship/main/assets/_dark.png">
-</picture>`;
-(() => (0, fs_1.writeFile)('README.md', `![build](https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/build.yml/badge.svg)<br/><p align=center>${logo}</p>` +
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/_light.png">
+    <img alt="logo" src="./assets/_dark.png">
+  </picture>
+</p>`;
+(() => (0, fs_1.writeFile)('README.md', `![build](https://github.com/jacksonblankenship/jacksonblankenship/actions/workflows/build.yml/badge.svg)<br/>${logo}` +
     sections_1.default
         .map(({ header, items }) => `${header !== 'head' ? `<h3>${header}</h3>` : ''}<br><p ${header === 'head' ? 'align=center' : ''}>${items
         .sort(() => 0.5 - Math.random())
