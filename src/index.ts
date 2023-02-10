@@ -6,9 +6,9 @@ import sections from './sections';
 
 const logo = `
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/_light.png">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/_dark.png">
-  <img src="./assets/_dark.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jacksonblankenship/jacksonblankenship/main/assets/_light.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jacksonblankenship/jacksonblankenship/main/assets/_dark.png">
+  <img src="https://raw.githubusercontent.com/jacksonblankenship/jacksonblankenship/main/assets/_dark.png">
 </picture>`;
 
 (() =>
