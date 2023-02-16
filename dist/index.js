@@ -60,8 +60,9 @@ const lastUpdated = `
         .map(({ title, href }) => ({
         img: `<img src="./assets/${title}.svg" alt="${title}" width=50 height=50 />`,
         href: href,
+        title,
     }))
-        .map(({ img, href }) => href ? `<a href="${href}">${img}</a>` : img)
+        .map(({ img, href, title }) => href ? `<a href="${href}" title="${title}">${img}</a>` : img)
         .map((img, index) => `${img}${index < items.length - 1 ? '&nbsp;'.repeat(4) : ''}`)
         .join('')}</p><br>`)
         .map((section, index) => (index === 0 ? section + bio : section))
