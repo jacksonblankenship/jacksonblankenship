@@ -107,49 +107,77 @@ const sections = [
             },
             {
                 title: 'grpc',
-                href: 'https://grpc.io/'
+                href: 'https://grpc.io/',
             },
             {
                 title: 'stylelint',
-                href: 'https://stylelint.io/'
-            },
-            {
-                title: 'jest',
-                href: 'https://jestjs.io/',
+                href: 'https://stylelint.io/',
             },
             {
                 title: 'react-testing-library',
-                href: 'https://testing-library.com/'
+                href: 'https://testing-library.com/',
             },
             {
                 title: 'react-router-dom',
-                href: 'https://v5.reactrouter.com/'
+                href: 'https://v5.reactrouter.com/',
             },
             {
                 title: 'fish',
-                href: 'https://fishshell.com/'
+                href: 'https://fishshell.com/',
             },
             {
                 title: 'docker',
-                href: 'https://www.docker.com/'
+                href: 'https://www.docker.com/',
             },
             {
                 title: 'nginx',
-                href: 'https://www.nginx.com/'
+                href: 'https://www.nginx.com/',
             },
             {
                 title: 'yarn',
-                href: 'https://yarnpkg.com/'
+                href: 'https://yarnpkg.com/',
             },
             {
                 title: 'railway',
-                href: 'https://railway.app/'
-            }
+                href: 'https://railway.app/',
+            },
+            {
+                title: 'storybook',
+                href: 'https://storybook.js.org/',
+            },
+            {
+                title: 'vitest',
+                href: 'https://vitest.dev/',
+            },
+            {
+                title: 'radix',
+                href: 'https://www.radix-ui.com/',
+            },
+            {
+                title: 'cva',
+                href: 'https://cva.style/docs',
+            },
+            {
+                title: 'partytown',
+                href: 'https://partytown.builder.io/',
+            },
+            {
+                title: 'nestjs',
+                href: 'https://nestjs.com/',
+            },
+            {
+                title: 'zod',
+                href: 'https://zod.dev/',
+            },
         ],
     },
     {
         header: 'Previously worked with...',
         items: [
+            {
+                title: 'jest',
+                href: 'https://jestjs.io/',
+            },
             {
                 title: 'css3',
                 href: 'https://en.wikipedia.org/wiki/CSS',
@@ -164,11 +192,11 @@ const sections = [
             },
             {
                 title: 'pnpm',
-                href: 'https://pnpm.io/'
+                href: 'https://pnpm.io/',
             },
             {
                 title: 'trpc',
-                href: 'https://trpc.io/'
+                href: 'https://trpc.io/',
             },
             {
                 title: 'next',
@@ -249,10 +277,6 @@ const sections = [
             {
                 title: 'matomo',
                 href: 'https://matomo.org/',
-            },
-            {
-                title: 'storybook',
-                href: 'https://storybook.js.org/',
             },
             {
                 title: 'react-hook-form',
@@ -385,8 +409,8 @@ const sections = [
         items: [
             {
                 title: 'rabbitmq',
-                href: 'https://www.rabbitmq.com/'
-            }
+                href: 'https://www.rabbitmq.com/',
+            },
         ],
     },
 ];
