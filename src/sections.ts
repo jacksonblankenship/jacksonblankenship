@@ -70,10 +70,6 @@ const sections: Array<Section> = [
         href: 'https://www.typescriptlang.org/',
       },
       {
-        title: 'vim',
-        href: 'https://en.wikipedia.org/wiki/Vim_(text_editor)',
-      },
-      {
         title: 'vscode',
         href: 'https://code.visualstudio.com/',
       },
@@ -181,6 +177,10 @@ const sections: Array<Section> = [
         title: 'kitty',
         href: 'https://sw.kovidgoyal.net/kitty/',
       },
+      {
+        title: 'neovim',
+        href: 'https://neovim.io/',
+      },
     ],
   },
   {
@@ -201,6 +201,10 @@ const sections: Array<Section> = [
       {
         title: 'npm',
         href: 'https://www.npmjs.com/',
+      },
+      {
+        title: 'vim',
+        href: 'https://en.wikipedia.org/wiki/Vim_(text_editor)',
       },
       {
         title: 'pnpm',
