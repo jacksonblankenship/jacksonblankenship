@@ -379,6 +379,10 @@ const sections: Array<Section> = [
         href: 'https://about.gitlab.com/',
       },
       {
+        title: 'expo',
+        href: 'https://expo.dev/',
+      },
+      {
         title: 'invision',
         href: 'https://www.invisionapp.com/',
       },
