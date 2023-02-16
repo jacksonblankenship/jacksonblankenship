@@ -412,15 +412,6 @@ const sections: Array<Section> = [
       },
     ],
   },
-  {
-    header: 'Currently learning...',
-    items: [
-      {
-        title: 'rabbitmq',
-        href: 'https://www.rabbitmq.com/',
-      },
-    ],
-  },
 ];
 
 export default sections;
