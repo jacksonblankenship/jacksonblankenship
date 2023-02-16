@@ -177,6 +177,10 @@ const sections: Array<Section> = [
         title: 'zod',
         href: 'https://zod.dev/',
       },
+      {
+        title: 'kitty',
+        href: 'https://sw.kovidgoyal.net/kitty/',
+      },
     ],
   },
   {
