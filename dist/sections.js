@@ -404,14 +404,5 @@ const sections = [
             },
         ],
     },
-    {
-        header: 'Currently learning...',
-        items: [
-            {
-                title: 'rabbitmq',
-                href: 'https://www.rabbitmq.com/',
-            },
-        ],
-    },
 ];
 exports.default = sections;
