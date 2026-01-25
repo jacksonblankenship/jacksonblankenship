@@ -3,6 +3,7 @@ import { z } from "zod";
 import { hash } from "./package.json";
 
 const username = process.env.GITHUB_REPOSITORY_OWNER ?? "github";
+const totalRepos = 10;
 
 const RepoSchema = z.object({
 	name: z.string(),
@@ -53,7 +54,7 @@ const formatRepoLine = (repo: RepoWithSource): string => {
  */
 const fetchRepos = async (username: string): Promise<Repo[]> => {
 	const data = await fetch(
-		`https://api.github.com/users/${username}/repos?per_page=100&sort=pushed`,
+		`https://api.github.com/users/${username}/repos?per_page=${totalRepos}&sort=pushed`,
 	).then((r) => r.json());
 	return z.array(RepoSchema).parse(data);
 };
@@ -85,11 +86,12 @@ const reposWithSource = await enrichForksWithSource(repos);
 
 const listing = reposWithSource
 	.sort((a, b) => a.name.localeCompare(b.name))
+	.slice(0, totalRepos)
 	.map(formatRepoLine)
 	.join("\n");
 
 const readme = `<pre>
-${username}@github ~> ls -la
+${username}@github ~> ls -lat | head -n ${totalRepos} | sort
 ${listing}
 </pre>`;
 
