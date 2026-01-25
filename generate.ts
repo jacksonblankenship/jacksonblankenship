@@ -83,7 +83,10 @@ const enrichForksWithSource = async (
 const repos = await fetchRepos(username);
 const reposWithSource = await enrichForksWithSource(repos);
 
-const listing = reposWithSource.map(formatRepoLine).join("\n");
+const listing = reposWithSource
+	.sort((a, b) => a.name.localeCompare(b.name))
+	.map(formatRepoLine)
+	.join("\n");
 
 const readme = `<pre>
 ${username}@github ~> ls -la
