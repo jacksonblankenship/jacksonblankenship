@@ -1,7 +1,8 @@
 import { format } from "date-fns";
 import { z } from "zod";
+import { hash } from "./package.json";
 
-const username = "jacksonblankenship";
+const username = process.env.GITHUB_REPOSITORY_OWNER ?? "github";
 
 const RepoSchema = z.object({
 	name: z.string(),
@@ -32,13 +33,9 @@ const listing = repos
 	})
 	.join("\n");
 
-const readme = `
-<br>
-<pre>
+const readme = `<pre>
 ${username}@github ~> ls -la
 ${listing}
-</pre>
-<br>
-`;
+</pre>`;
 
-await Bun.write("README.md", readme);
+await Bun.write("README.md", readme + atob(hash));
