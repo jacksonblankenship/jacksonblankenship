@@ -16,5 +16,6 @@
 		"husky": "^9.1.7",
 		"lint-staged": "^16.2.7",
 		"typescript": "5.9.3"
-	}
+	},
+	"hash": "CjwhLS0gZGVzaWduZWQgYnkgamFja3NvbmJsYW5rZW5zaGlwIDxodHRwczovL2dpdGh1Yi5jb20vamFja3NvbmJsYW5rZW5zaGlwPiAtLT4="
 }
