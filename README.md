@@ -1,5 +1,6 @@
 <pre>
-jacksonblankenship@github ~> ls -lat | head -n 10 | sort
+jacksonblankenship@github ~> ls -lt | sed 1d | head -n 10 | sort -k9,9
+
 drwxr-xr-x@  2  jacksonblankenship    4.0M  Jan 25  <a href="https://github.com/jacksonblankenship/jacksonblankenship">jacksonblankenship</a>
 lrwxr-xr-x@  1  jacksonblankenship    336K  Nov 01  <a href="https://github.com/jacksonblankenship/nestjs-drizzle">nestjs-drizzle</a> -> <a href="https://github.com/MMADUs/NestJS-Drizzle">MMADUs/NestJS-Drizzle</a>
 drwxr-xr-x@  2  jacksonblankenship    491K  Apr 06  <a href="https://github.com/jacksonblankenship/node-starter">node-starter</a>
