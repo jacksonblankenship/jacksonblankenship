@@ -91,7 +91,8 @@ const listing = reposWithSource
 	.join("\n");
 
 const readme = `<pre>
-${username}@github ~> ls -lat | head -n ${totalRepos} | sort
+${username}@github ~> ls -lt | sed 1d | head -n ${totalRepos} | sort -k9,9
+
 ${listing}
 </pre>`;
 
