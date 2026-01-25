@@ -2,7 +2,7 @@
 	"name": "jacksonblankenship",
 	"desctiption": "Jackson Blankenship's GitHub Profile",
 	"scripts": {
-		"generate": "bun run src/index.ts",
+		"generate": "bun run generate.ts",
 		"prepare": "husky"
 	},
 	"dependencies": {
