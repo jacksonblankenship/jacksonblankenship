@@ -2,8 +2,8 @@ import { format } from "date-fns";
 import { z } from "zod";
 import { hash } from "./package.json";
 
-const username = process.env.GITHUB_REPOSITORY_OWNER ?? "github";
-const totalRepos = 10;
+const USERNAME = process.env.GITHUB_REPOSITORY_OWNER ?? "github";
+const TOTAL_REPOS = 10;
 
 const RepoSchema = z.object({
 	name: z.string(),
@@ -31,10 +31,10 @@ const formatSize = (kb: number): string => {
 };
 
 /**
- * Formats a repo as an ls -la style line.
+ * Formats a repo as an ls -lt style line.
  *
  * Directories (owned repos):  drwxr-xr-x@  2  owner  size  date  name
- * Symlinks (forks):           lrwxr-xr-x@  1  owner  size  date  name -> source
+ * Symlinks (forks):           lrwxrwxrwx@  1  owner  size  date  name -> source
  */
 const formatRepoLine = (repo: RepoWithSource): string => {
 	const date = format(new Date(repo.pushed_at), "MMM dd");
@@ -42,7 +42,7 @@ const formatRepoLine = (repo: RepoWithSource): string => {
 
 	// Forks display as symlinks pointing to their source repo
 	if (repo.fork && repo.source) {
-		return `lrwxr-xr-x@  1  ${repo.owner.login}  ${size}  ${date}  <a href="${repo.html_url}">${repo.name}</a> -> <a href="${repo.source.html_url}">${repo.source.full_name}</a>`;
+		return `lrwxrwxrwx@  1  ${repo.owner.login}  ${size}  ${date}  <a href="${repo.html_url}">${repo.name}</a> -> <a href="${repo.source.html_url}">${repo.source.full_name}</a>`;
 	}
 
 	// Owned repos display as directories
@@ -53,10 +53,11 @@ const formatRepoLine = (repo: RepoWithSource): string => {
  * Fetches all public repos for a user, sorted by most recently pushed.
  */
 const fetchRepos = async (username: string): Promise<Repo[]> => {
-	const data = await fetch(
-		`https://api.github.com/users/${username}/repos?per_page=${totalRepos}&sort=pushed`,
-	).then((r) => r.json());
-	return z.array(RepoSchema).parse(data);
+	const res = await fetch(
+		`https://api.github.com/users/${username}/repos?per_page=${TOTAL_REPOS}&sort=pushed`,
+	);
+	if (!res.ok) throw new Error(`GitHub API error: ${res.status}`);
+	return z.array(RepoSchema).parse(await res.json());
 };
 
 /**
@@ -74,25 +75,24 @@ const enrichForksWithSource = async (
 				"github.com",
 				"api.github.com/repos",
 			);
-			const detail = await fetch(apiUrl).then((r) => r.json());
+			const res = await fetch(apiUrl);
+			if (!res.ok) return repo; // Fall back to treating as regular repo
 
-			return RepoDetailSchema.parse(detail);
+			return RepoDetailSchema.parse(await res.json());
 		}),
 	);
 };
 
-const repos = await fetchRepos(username);
+const repos = await fetchRepos(USERNAME);
 const reposWithSource = await enrichForksWithSource(repos);
 
 const listing = reposWithSource
 	.sort((a, b) => a.name.localeCompare(b.name))
-	.slice(0, totalRepos)
 	.map(formatRepoLine)
 	.join("\n");
 
 const readme = `<pre>
-${username}@github ~> ls -lt | sed 1d | head -n ${totalRepos} | sort -k9,9
-
+${USERNAME}@github ~> ls -lt | sed 1d | head -n ${TOTAL_REPOS} | sort -k9,9
 ${listing}
 </pre>`;
 
