@@ -2,7 +2,7 @@
 jacksonblankenship@github ~> ls -lt | sed 1d | head -n 10 | sort -k9,9
 drwxr-xr-x@  2  jacksonblankenship    500K  Jan 28  <a href="https://github.com/jacksonblankenship/bun-starter">bun-starter</a>
 drwxr-xr-x@  2  jacksonblankenship    3.4M  May 18  <a href="https://github.com/jacksonblankenship/dotfiles">dotfiles</a>
-drwxr-xr-x@  2  jacksonblankenship    4.0M  Feb 02  <a href="https://github.com/jacksonblankenship/jacksonblankenship">jacksonblankenship</a>
+drwxr-xr-x@  2  jacksonblankenship    3.9M  Feb 02  <a href="https://github.com/jacksonblankenship/jacksonblankenship">jacksonblankenship</a>
 lrwxrwxrwx@  1  jacksonblankenship    336K  Nov 01  <a href="https://github.com/jacksonblankenship/nestjs-drizzle">nestjs-drizzle</a> -> <a href="https://github.com/MMADUs/NestJS-Drizzle">MMADUs/NestJS-Drizzle</a>
 drwxr-xr-x@  2  jacksonblankenship    3.3M  Feb 01  <a href="https://github.com/jacksonblankenship/pickem">pickem</a>
 drwxr-xr-x@  2  jacksonblankenship    574K  Feb 01  <a href="https://github.com/jacksonblankenship/pickem-be">pickem-be</a>
